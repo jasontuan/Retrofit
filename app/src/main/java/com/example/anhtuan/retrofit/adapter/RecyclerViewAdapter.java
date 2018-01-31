@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.anhtuan.retrofit.R;
-import com.example.anhtuan.retrofit.model.Users;
+import com.example.anhtuan.retrofit.Model.Users;
 
 import java.util.List;
 

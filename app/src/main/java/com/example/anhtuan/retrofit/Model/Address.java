@@ -1,4 +1,4 @@
-package com.example.anhtuan.retrofit.model;
+package com.example.anhtuan.retrofit.Model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -25,7 +25,7 @@ public class Address {
     @SerializedName("zipcode")
     private String zipcode;
     @SerializedName("geo")
-    private Geo Geo;
+    private com.example.anhtuan.retrofit.Model.Geo Geo;
 
     public Address() {
     }

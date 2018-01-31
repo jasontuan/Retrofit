@@ -1,8 +1,10 @@
 package com.example.anhtuan.retrofit.API;
 
-import com.example.anhtuan.retrofit.model.UserResponse;
+import com.example.anhtuan.retrofit.Model.UserResponse;
 
 import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
@@ -16,4 +18,10 @@ public interface UserAPI {
 
     @GET("users")
     Call<UserResponse> getUsers(@Query("page") int page, @Query("limit") int limit);
+
+    Retrofit retrofit = new Retrofit.Builder()
+            .baseUrl(UserAPI.BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build();
+
 }

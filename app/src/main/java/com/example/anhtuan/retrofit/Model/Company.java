@@ -1,4 +1,4 @@
-package com.example.anhtuan.retrofit.model;
+package com.example.anhtuan.retrofit.Model;
 
 import com.google.gson.annotations.SerializedName;
 
